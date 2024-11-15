@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header class="header">
+        <div class="logo">JiaJ Tang</div>
+        <nav class="nav">
+            <a href="#home">首页</a>
+            <a href="#about">关于我</a>
+            <a href="#contact">联系方式</a>
+        </nav>
+    </header>
+
+    <!-- 主体内容区域 -->
+    <main>
+        <!-- 欢迎区块 -->
+        <section id="home" class="welcome-section">
+            <h1>你好，我是 <span class="highlight">JiaJ Tang</span></h1>
+            <p class="subtitle">热爱编程，专注于Web开发和人工智能</p>
+        </section>
+
+        <!-- 照片轮播区 -->
+        <section id="gallery" class="gallery-section">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="image/slide1.png" alt="项目展示1">
+                        <p class="caption">Web开发项目展示</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="image/slide2.png" alt="项目展示2">
+                        <p class="caption">人工智能应用展示</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="image/slide3.png" alt="项目展示3">
+                        <p class="caption">数据分析项目展示</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="image/slide4.png" alt="项目展示4">
+                        <p class="caption">个人作品集展示</p>
+                    </div>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+        </section>
+
+        <!-- 个人简介区 -->
+        <section id="about" class="about-section">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <p>我是一名充满热情的软件开发者，专注于Web开发和人工智能领域。我热衷于将创新技术转化为实用的解决方案，并且持续学习新的技术和方法。</p>
+                <p>技术栈：</p>
+                <ul>
+                    <li>前端开发：HTML5, CSS3, JavaScript</li>
+                    <li>后端开发：Python, Node.js</li>
+                    <li>人工智能：机器学习, 深度学习</li>
+                    <li>其他技能：数据分析, 项目管理</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部区域 -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://weibo.com/你的微博" class="social-link" target="_blank"><i class="fab fa-weibo"></i></a>
+            <a href="#" class="social-link wechat"><i class="fab fa-weixin"></i></a>
+            <a href="https://www.instagram.com/你的Instagram" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/你的LinkedIn" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/你的GitHub" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="copyright">
+            © <span id="year"></span> JiaJ Tang. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- 微信二维码弹窗 -->
+    <div id="wechatModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="image/wechat-qr.jpg" alt="微信二维码">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
